@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Zip food delievery",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default { \n addOrder: async () => {\n\t const orderId = await this.generateRandomID();\n\t await add_orders.run({id : orderId});\n\t await add_products.run({id : orderId});\n\t await Fetch_orders.run();\n\t await resetWidget('Modal2');\n\t return closeModal('Modal2'); \n },\n generateRandomID: () => {\n\t\treturn '_' + Math.random().toString(36).substr(2,9);\n\t}\n}",
+    "variables": []
+  },
+  "id": "Zip food delievery_utils",
+  "deleted": false,
+  "gitSyncId": "6281ffea2c1e3f03d32a2ac4_628dd7757901344ba8d27724"
+}
